@@ -4,7 +4,7 @@ const invlerp = (x, y, a) => clamp((a - x) / (y - x));
 
 function menuResize() {
     const menu_buttons_container = document.getElementById("header-flex-container");
-    var window_width = window.innerWidth;
+    var window_width = clamp(window.innerWidth, 0, 1170);
 
     var ratio = (window_width/1280)
 
