@@ -1,7 +1,7 @@
 body {
 	width: 100%;
 	margin: 0px;
-	background-color: black;
+	background-color: #000;
 }
 
 p {
@@ -34,6 +34,7 @@ img {
 .flex-container {
 	display: flex;
 	flex-wrap: nowrap;
+	gap: 300px;
 	justify-content: space-between;
 }
 
@@ -45,18 +46,18 @@ img {
 
 .panel-background, .menu-panel {
 	padding: 20px;
-	background-color: rgb(198, 214, 208);
+	background-color: rgb(220, 220, 220);
+	border: 5px;
 	border-style: solid;
-	border-color: black;
-	border-top: 0px;
-	box-shadow: 5px 0px rgb(0, 230, 50), 0px 5px rgb(0, 230, 50);
+	border-radius: 25px;
+	border-color: #00a0f7;
+	box-shadow: 0px 0px 20px #00a0f7, inset 0px 0px 15px #00a0f7;
 }
 
 .menu-panel {
-	background-color: rgb(0, 230, 50);
-	margin-top: 50px;
-	padding: 15px 15px 15px 15px;
-	box-shadow: 5px 0px rgb(198, 214, 208), 0px 5px rgb(198, 214, 208);
+	background-color: rgba(0,0,0,0);
+	margin-top: 10px;
+	padding: 25px 15px 15px 15px;
 }
 
 #logo-button-flex-container {
@@ -71,16 +72,11 @@ img {
 
 #button-home-image {
 	height: 150px;
-	margin-top: -80px;
-	margin-left: -60px;
-	margin-bottom: -50px;
-	transition: all 0.12s ease-out 0.08s;
-}
+	margin-top: -100px;
+	margin-left: -50px;
+	margin-bottom: -55px;
 
-#button-home-image:hover {
-    cursor: default;
-    transform: rotate(-12deg);
-    transition: all 0.08s ease-out 0.04s;
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.6));
 }
 
 #title-text-top-container {
@@ -110,11 +106,14 @@ img {
 }
 
 #menu-buttons-flex-container {
-	align-items: center;
+	width: 100%;
+
+	margin-bottom: 10px;
+
 	display: flex;
-	justify-content: space-around;
+	justify-content: start;
 	flex-direction: row;
-	gap: 30px;
+	gap: 50px;
 }
 
 .menu-button {
@@ -126,11 +125,6 @@ img {
 	font-family: "clear-sans", Arial, Helvetica, sans-serif;
 	font-size: large;
 }
-
-.menu-button-image {
-	filter: drop-shadow(1px 1px 1px black);
-}
-
 
 /*==========  Footer  ==========*/
 
